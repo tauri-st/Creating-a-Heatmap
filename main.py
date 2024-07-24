@@ -18,3 +18,4 @@ plt.title("Average Tips by Group Size and Meal Time")
 
 plt.savefig("tips-by-group-and-time.png")
 
+fig.set_ylim(0,6)
