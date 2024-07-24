@@ -9,4 +9,7 @@ with open("tips.csv", "r") as csvfile:
 tips_pivoted = tips.pivot_table(values="tip", index=["size"], columns=["time"])
 
 #creat a heat map using the dataframe with annotations and a coolwarm color palette
-fig = sns.heatmap(tips_pivoted, annot=True, cmap="coolwarm", )
+fig = sns.heatmap(tips_pivoted, annot=True, cmap="coolwarm")
+
+plt.xlabel("Meal Time")
+plt.ylabel("Size of Group")
