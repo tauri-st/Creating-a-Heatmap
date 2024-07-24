@@ -8,3 +8,5 @@ with open("tips.csv", "r") as csvfile:
 #define the dataframe
 tips_pivoted = tips.pivot_table(values="tip", index=["size"], columns=["time"])
 
+#creat a heat map using the dataframe with annotations and a coolwarm color palette
+fig = sns.heatmap(tips_pivoted, annot=True, cmap="coolwarm", )
