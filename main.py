@@ -4,3 +4,5 @@ import seaborn as sns
 
 with open("tips.csv", "r") as csvfile:
   tips = pd.read_csv(csvfile)
+
+tips_pivoted = tips.pivot_table(values="tip", index=["size"], columns=["time"])
