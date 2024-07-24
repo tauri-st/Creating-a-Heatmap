@@ -13,3 +13,6 @@ fig = sns.heatmap(tips_pivoted, annot=True, cmap="coolwarm")
 
 plt.xlabel("Meal Time")
 plt.ylabel("Size of Group")
+
+plt.title("Average Tips by Group Size and Meal Time")
+
