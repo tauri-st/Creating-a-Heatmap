@@ -16,3 +16,5 @@ plt.ylabel("Size of Group")
 
 plt.title("Average Tips by Group Size and Meal Time")
 
+plt.savefig("tips-by-group-and-time.png")
+
